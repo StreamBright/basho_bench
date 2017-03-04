@@ -1,0 +1,6 @@
+language: erlang
+notifications:
+  webhooks: http://127.0.0.1
+  email: noreply@no.rep.ly
+otp_release:
+  - 19.2
