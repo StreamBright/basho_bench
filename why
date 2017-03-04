@@ -1,0 +1,33 @@
+rel
+
+/Users/l1x/code/sb/basho_bench/rel/basho_bench/erts-8.2.2/bin/beam.smp 
+-B -- 
+-root /Users/l1x/code/sb/basho_bench/rel/basho_bench 
+-progname erl -- 
+-home /Users/l1x -- 
+-boot /Users/l1x/code/sb/basho_bench/rel/basho_bench/releases/0.10.0/start_clean 
+-boot start_clean 
+-noshell 
+-run escript start 
+-extra basho_bench.beam /Users/l1x/code/sb/basho_bench/examples/http.local.config -d /Users/l1x/code/sb/basho_bench/tests/
+
+escript
+/usr/local/Cellar/erlang/19.2.3/lib/erlang/erts-8.2.2/bin/beam.smp 
+-B 
+-K true 
+-A 128 
+-S 32:32 
+-SP 50:25 
+-sub true 
+-P 1222333 
+-Q 1222333 
+-zdbbl 32768 
+-- -root /usr/local/Cellar/erlang/19.2.3/lib/erlang 
+-progname erl -- 
+-home /Users/l1x -- 
+-boot start_clean 
+-noshell 
+-smp enable 
+-rsh ssh 
+-run escript start 
+-extra ./basho_bench examples/http.local.config -d tests/
